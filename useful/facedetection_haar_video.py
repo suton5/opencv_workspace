@@ -1,7 +1,7 @@
 import cv2
 import sys
 
-cascPath = "/home/sujay/opencv_workspace/opencv/data/haarcascades/haarcascade_frontalface_default.xml"
+cascPath = "../opencv/data/haarcascades/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
