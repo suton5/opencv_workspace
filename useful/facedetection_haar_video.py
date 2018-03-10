@@ -1,14 +1,19 @@
 import cv2
-import sys
 
 cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
 
-while True:
+# Check if camera opened successfully
+if (video_capture.isOpened()== False):
+    print("Error opening video stream or file")
+
+# Read until video is completed
+while(video_capture.isOpened()):
     # Capture frame-by-frame
     ret, frame = video_capture.read()
+
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
