@@ -3,7 +3,8 @@ import cv2
 cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
+#video_capture = cv2.VideoCapture('http://192.168.0.102:8081')
 
 # Check if camera opened successfully
 if (video_capture.isOpened()== False):
