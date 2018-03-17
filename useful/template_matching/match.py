@@ -7,10 +7,8 @@ import cv2
 #Get arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-t", "--template", required=True, help="Path to template image")
-ap.add_argument("-i", "--images", required=True,
-	help="Path to images where template will be matched")
-ap.add_argument("-v", "--visualize",
-	help="Flag indicating whether or not to visualize each iteration")
+ap.add_argument("-i", "--images", required=True, help="Path to images where template will be matched")
+ap.add_argument("-v", "--visualize", help="Flag indicating whether or not to visualize each iteration")
 args = vars(ap.parse_args())
 
 
