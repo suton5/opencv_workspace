@@ -78,6 +78,6 @@ for imagePath in glob.glob(args["images"] + "/*.jpg"):
 	(endX, endY) = (int((maxLoc[0] + tW) * r), int((maxLoc[1] + tH) * r))
 
 	# draw a bounding box around the detected result and display the image
-	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 0, 255), 2)
+	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 5)
 	cv2.imshow("Image", image)
 	cv2.waitKey(0)
