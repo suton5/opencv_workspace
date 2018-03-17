@@ -1,7 +1,7 @@
 # opencv_workspace
 
-libraries: Contains standard OpenCV libraries
-useful: Contains useful Python scripts for various purposes
+###libraries: Contains standard OpenCV libraries
+###useful: Contains useful Python scripts for various purposes
 
 ./useful
 
