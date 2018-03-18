@@ -7,6 +7,7 @@ import imutils
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 #img = cv2.imread(sys.argv[1])
+# Use current screen as image
 img = pyautogui.screenshot()
 img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

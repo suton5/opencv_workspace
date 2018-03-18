@@ -1,7 +1,7 @@
 import cv2
+import sys
 
-# Use the relevant cascade
-cascPath = "data/oxidizer.xml"
+cascPath = str(sys.argv[1])
 Cascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
