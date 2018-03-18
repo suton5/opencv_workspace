@@ -8,9 +8,9 @@
 
 1. Extracting frames from camera input
 ```
-python frame_extractor.py
+python frame_extractor.py t
 ```
-Extracts one frame every 5 seconds. Edit file to change delay time/destination folder.
+Extracts one frame every t seconds. Ensure t is integer/float.
 
 2. Video output
 ```
@@ -39,6 +39,6 @@ Ensure that there is a folder named 'negatives' with all the images that do not 
 
 2. Using the Haar Cascade classifier with a webcam
 ```
-python haar_video.py
+python haar_video.py classifier.xml
 ```
-Reads from video source and finds object.
+Reads from video source and finds object. Provide path of classifier as argument.
