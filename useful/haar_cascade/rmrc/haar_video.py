@@ -21,9 +21,12 @@ while(video_capture.isOpened()):
     hazard = Cascade.detectMultiScale(gray, 1.3, 10)
 
     # Draw a rectangle around the hazard sign
+    # Note: The classifier was detecting many smaller features and drawing rectangles around them. 
+    # Code has been altered such that only larger rectangles (the ones corresponding to the actual sign) will be drawn.
     for (x, y, w, h) in hazard:
         if w>100:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+            print("DETECTED!")
 
     # Display the resulting frame
     cv2.imshow('Video', frame)
