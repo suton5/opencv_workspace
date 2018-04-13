@@ -1,10 +1,11 @@
 import cv2
 import time
 import os
+import sys
 
 vidcap = cv2.VideoCapture(0)
 success,image = vidcap.read()
-count = 22
+count = 59
 success = True
 t = float(sys.argv[1])
 
